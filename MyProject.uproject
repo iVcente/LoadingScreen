@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.3",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MyProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"UMG",
+				"DeveloperSettings"
+			]
+		},
+		{
+			"Name": "LoadingScreen",
+			"Type": "ClientOnly",
+			"LoadingPhase": "PreLoadingScreen",
+            "PlatformAllowList": ["Win64"]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "JsonBlueprintUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "HttpBlueprint",
+			"Enabled": true
+		}
+	]
+}
