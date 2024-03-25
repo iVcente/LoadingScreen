@@ -8,7 +8,7 @@ My proposed change on the source code is on the line 908 of the given file:
 if (IsMovieStreamingFinished() && LoadingScreenAttributes.bMoviesAreSkippable)
 ```
 
-The entire file with this change can be found in the _Engine/DefaultMoviePlayer.cpp_ of this repo.
+The entire file with this change can be found in the _Engine/DefaultMoviePlayer.cpp_ file of this repo.
 
 References
 ---
