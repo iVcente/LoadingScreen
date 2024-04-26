@@ -2,13 +2,13 @@ This is my solution for a loading screen in Unreal. It's possible to manually or
 
 In the engine source code, I believe there's a bug on the **MoviePlayer** module, specifically in the _DefaultMoviePlayer.cpp_ file. The way this bug behaves is that even if you set up your `FLoadingScreenAttributes` property `bMoviesAreSkippable` to `false`, movies can still be skipabble. This really becomes a problem when you'd like, for instance, to display the loading screen and manually hide it when your game routines are completely ready.
 
-My proposed change on the source code is on the line 908 of the given file:
+My proposed change on the source code is -- at the time of this writing -- on the line 908 of the given file:
 
 ```
 if (IsMovieStreamingFinished() && LoadingScreenAttributes.bMoviesAreSkippable)
 ```
 
-The entire file with this change can be found in the _Engine/DefaultMoviePlayer.cpp_ file of this repo.
+The entire file with this change can be found in the _Engine/DefaultMoviePlayer.cpp_ file of this repo. This change in the source code can be found [here](https://github.com/iVcente/MyUnrealEngineModifications) as well. It's a repo containing all my modifications to Unreal Engine source code.
 
 References
 ---
